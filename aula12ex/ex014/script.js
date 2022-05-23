@@ -6,7 +6,7 @@ function carregar() {
     var hora = data.getHours()
     var minutos = data.getMinutes()
     
-    msg.innerHTML = `Agora são ${hora}:${minutos}h.`
+    msg.innerHTML = `<strong>Agora são ${hora}:${minutos}h</strong>.`
 
     /*TESTANDO...
     var hora = 10
@@ -22,7 +22,7 @@ function carregar() {
         //BOA TARDE
         img.src = 'foto-tarde.png'
         document.body.style.backgroundColor = '#e77401'
-        
+
     } else {
         //BOA NOITE
         img.src = 'foto-noite.png'
