@@ -4,27 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo do exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
         <div>
-            Testando...
+            <p>
+                Número: 
+                <input type="number" name="num" id="txtnum">
+                <input type="button" value="Gerar tabuada" onclick="tabuada()">
+            </p>
         </div>
 
-        <div>
-            Olá!
+        <div id="tabuada">
+            <select name="tabuada" id="tab" size="10">
+                <option value="">Digite um número acima.</option>
+                <!-- 
+                CRIANDO OPTIONS NO HTML
+                <option value = 'v1'>Valor1</option>
+                <option value = 'v2'>Valor2</option>
+                <option value = 'v3'>Valor3</option>
+
+                Mas foi criado no JS.
+            -->
+            
+            </select>
+            
         </div>
     </section>
 
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p><em>&copy; CursoemVideo</em></p>
     </footer>
 
     <script src="script.js"></script>
